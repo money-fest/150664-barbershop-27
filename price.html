@@ -7,17 +7,17 @@
     <body>
         <header>
             <nav>
-                <img src="img/logo-small.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
+                <a href="index.html"><img src="img/logo-small.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»"></a>
                 <ul>
-                    <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-                    <li><a href="news.html"></a>НОВОСТИ</li>
-                    <li><a href="price.html"></a>ПРАЙС-ЛИСТ</li>
-                    <li><a href="catalog.html"></a>МАГАЗИН</li>
-                    <li><a href="contacts.html"></a>КОНТАКТЫ</li>
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
                 <ul>
                     <li>
-                        <button type="button">ВХОД</button>
+                        <a href="#">Вход</a>
                     </li>
                 </ul>
             </nav>
@@ -70,13 +70,13 @@
         </main>
         <footer>
             <p>
-                БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-                <a href="map.html">КАК НАС НАЙТИ?</a><br>
-                ТЕЛЕФОН: +7 (495) 666-02-66<br>
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                <a href="map.html">Как нас найти?</a><br>
+                Телефон: +7 (495) 666-02-66<br>
             </p>
             <div>
-                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <p>Давайте дружить!</p>
                 <ul>
                     <li><a href="#">Вконтакте</a></li>
                     <li><a href="#">Фейсбук</a></li>
@@ -84,14 +84,27 @@
                 </ul>
             </div>
             <p>
-                РАЗРАБОТАНО:
+                Разработано:
                 <a href="https://htmlacademy.ru">HTML academy</a>
             </p>
         </footer>
         <section>
             <h2>Личный кабинет</h2>
             <p>Введите свой логин и пароль.</p>
-            <!-- Здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+                <label for="login">Логин</label>
+                <input type="text" id="login" name="login" placeholder="Логин">
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Пароль">
+
+                <label>
+                    <input type="checkbox" name="save-me" checked>
+                    Запомните меня
+                </label>
+                <a href="#">Я забыл пароль!</a>
+                <button type="button">Войти</button>
+            </form>
             <button type="button">Закрыть</button>
         </section>
     </body>
